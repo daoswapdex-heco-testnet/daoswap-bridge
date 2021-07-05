@@ -9,7 +9,7 @@
     "build": "cross-env VUE_APP_TARGET=mainnet vue-cli-service build",
     "test": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@cityofzion/neon-js": "^4.8.1",
