@@ -1,15 +1,15 @@
 <template>
   <div class="menu">
-    <CLink href="https://app.heco.daoswap.cc/#/swap" class="item" target="_self">
+    <CLink :href="mainWebSiteUrl + '/#/swap'" class="item" target="_self">
       {{ $t('common.menu.swap') }}
     </CLink>
-    <CLink href="https://app.heco.daoswap.cc/#/pool" class="item" target="_self">
+    <CLink :href="mainWebSiteUrl + '/#/pool'" class="item" target="_self">
       {{ $t('common.menu.pool') }}
     </CLink>
-    <CLink href="https://app.heco.daoswap.cc/#/dao" class="item" target="_self">
+    <CLink :href="mainWebSiteUrl + '/#/dao'" class="item" target="_self">
       {{ $t('common.menu.dao') }}
     </CLink>
-    <CLink href="https://app.heco.daoswap.cc/#/governace" class="item" target="_self">
+    <CLink :href="mainWebSiteUrl + '/#/governace'" class="item" target="_self">
       {{ $t('common.menu.governace') }}
     </CLink>
     <CLink
@@ -37,6 +37,7 @@ export default {
   data() {
     return {
       mainnet: TARGET_MAINNET,
+      mainWebSiteUrl: 'https://test.app.heco.daoswap.cc',
     };
   },
   mounted() {},
