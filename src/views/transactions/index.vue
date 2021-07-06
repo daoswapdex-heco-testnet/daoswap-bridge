@@ -1,14 +1,10 @@
 <template>
   <Page class="transactions">
-    <img class="top-decoration" src="@/assets/svg/poly-bg.svg" />
-    <div class="bottom-decoration-wrapper">
-      <img class="bottom-decoration" src="@/assets/svg/poly-bg.svg" />
-    </div>
     <div class="content">
       <div class="content-inner">
         <div class="title">{{ $t('transactions.index.title') }}</div>
 
-        <div class="table-wrapper">
+        <div v-if="transactions.items && transactions.items.length > 0" class="table-wrapper">
           <ElTable :data="transactions.items">
             <ElTableColumn width="20" />
             <ElTableColumn
@@ -165,7 +161,7 @@ export default {
 
 <style lang="scss" scoped>
 .transactions {
-  min-width: 1440px;
+  // min-width: 1440px;
 }
 
 .top-decoration {
@@ -194,7 +190,7 @@ export default {
 }
 
 .content-inner {
-  width: 1160px;
+  // width: 1160px;
   margin: 40px auto 20px;
   @include child-margin-v(24px);
 }

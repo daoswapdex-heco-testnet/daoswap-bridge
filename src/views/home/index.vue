@@ -21,7 +21,7 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  min-width: 1440px;
+  // min-width: 1440px;
   background-image: var(--background-image);
 }
 

@@ -195,7 +195,7 @@ export default {
 .content {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  // width: 500px;
   height: 100vh;
   background: #171f31;
   box-shadow: 0px 2px 18px 7px rgba(#000000, 0.1);
@@ -312,7 +312,7 @@ export default {
 }
 .card {
   box-sizing: border-box;
-  width: 452px;
+  // width: 452px;
   padding: 40px;
   background: #171f31;
   box-shadow: 0px 2px 18px 7px rgba(#000000, 0.1);

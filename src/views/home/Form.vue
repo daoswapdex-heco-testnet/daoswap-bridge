@@ -607,7 +607,8 @@ export default {
 
 .card {
   box-sizing: border-box;
-  width: 452px;
+  min-width: 350px;
+  width: 100%;
   padding: 40px 50px 54px;
   background: #171f31;
   box-shadow: 0px 2px 18px 7px rgba(#000000, 0.1);
@@ -615,7 +616,7 @@ export default {
 }
 
 .title {
-  font-weight: 500px;
+  // font-weight: 500px;
   font-size: 20px;
   text-align: center;
   @include next-margin-v(30px);

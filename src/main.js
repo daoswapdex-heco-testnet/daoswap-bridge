@@ -3,6 +3,7 @@ import ElementUi from 'element-ui';
 import Vue from 'vue';
 import VueBemCn from 'vue-bem-cn';
 import VueMQ from 'vue-mq';
+import device from 'vue-device-detector';
 
 import './styles/rules/index.scss'; // import before custom components
 import App from './App';
@@ -27,6 +28,8 @@ Vue.use(VueMQ, {
 });
 
 Vue.use(VueBemCn, { hyphenate: true });
+
+Vue.use(device);
 
 Vue.use(components);
 
